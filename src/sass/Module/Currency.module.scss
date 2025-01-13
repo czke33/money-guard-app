@@ -1,0 +1,118 @@
+.wrapperContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #fbfbfb;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 32px;
+} 
+
+
+
+.tableContainer {
+  max-height: 170px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+
+
+.currencyTableWrapper {
+  background: rgba(103, 77, 166, 0.7);
+  width: 100%;
+}
+
+.currencyTableHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto 8px;
+  padding: 15px 0;
+}
+
+.currencyTableHeadItem {
+  color: #fbfbfb;
+  font-size: 16px;
+  font-family: 'Poppins-SemiBold', sans-serif;
+  text-align: center;
+}
+
+.tableBodyList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.tableBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+.tableItem {
+  display: inline-block;
+  color: #fbfbfb;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  width: 62px;
+  font-weight: 400;
+}
+
+.currencyTableHeadItem,
+.tableItem {
+  color: #fbfbfb;
+  font-size: 16px;
+  font-family: 'Poppins-SemiBold', sans-serif;
+  text-align: center;
+  flex: 1;
+}
+
+.gradient {
+  z-index: -20;
+  position: absolute;
+  width: 454px;
+  height: 454px;
+  border-radius: 454px;
+  background: rgba(47, 21, 176, 0.73);
+  filter: blur(100px);
+}
+
+
+
+/* Media query pentru tablet */ 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapperContainer {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 336px;
+    z-index: 1;
+    overflow: visible;
+    position: relative;
+  }
+
+  .gradient {
+    overflow: visible;
+  }
+}
+
+/* Media query pentru telefon */
+@media (max-width: 768px) {
+  .balanceContainer {
+    width: 280px;
+    height: 80px;
+    display: flex;
+
+  }
+}
